@@ -23,7 +23,7 @@ adder(50)=70
 adder(100)=170
 */
 
-const createAdder = (n) => (m) => n = n + m;;
+const createAdder = (n) => (m) => n +=m;;
 
 
 const adder = createAdder(100);
