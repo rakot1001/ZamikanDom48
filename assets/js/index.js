@@ -32,3 +32,20 @@ function updateView() {
 }
 
 updateView();
+
+
+
+
+
+///////////////////////
+const btn = document.querySelector('#uniq');
+
+function btnHandler(){
+  alert('You clicked on btn');
+  btn.removeEventListener('click', btnHandler);
+}
+
+btn.addEventListener('click', btnHandler);
+
+btn.dispatchEvent ( new MouseEvent('click'));
+
