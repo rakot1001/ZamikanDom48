@@ -41,11 +41,13 @@ updateView();
 const btn = document.querySelector('#uniq');
 
 function btnHandler(){
-  alert('You clicked on btn');
+  alert(this.innerHTML);
   btn.removeEventListener('click', btnHandler);
 }
 
 btn.addEventListener('click', btnHandler);
 
-btn.dispatchEvent ( new MouseEvent('click'));
+// btn.dispatchEvent ( new MouseEvent('click'));
+
+/* По нажатию на кнопку отобразить содержимое этой кнопки*/ 
 
