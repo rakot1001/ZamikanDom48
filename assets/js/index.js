@@ -41,7 +41,7 @@ updateView();
 const btn = document.querySelector('#uniq');
 
 function btnHandler(){
-  alert(this.innerHTML);
+  alert(this.innerText);
   btn.removeEventListener('click', btnHandler);
 }
 
