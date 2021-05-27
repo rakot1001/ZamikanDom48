@@ -23,11 +23,7 @@ adder(50)=70
 adder(100)=170
 */
 
-function createAdder(n) {
-  let state = n; //замкнутая переменная инкапсулированая
-  return function (m) {
-    return (n = n + m);
-  };
-}
+const createAdder = (n) => (m) => n = n + m;;
+
 
 const adder = createAdder(100);
